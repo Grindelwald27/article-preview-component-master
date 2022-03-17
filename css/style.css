@@ -1,0 +1,103 @@
+body {
+	background: hsl(210, 46%, 95%);
+	font-family: "Manrope", sans-serif;
+}
+
+div.container {
+	margin: 5% auto;
+}
+
+main {
+	background: white;
+}
+
+section#text h1 {
+	font-size: 1.4em;
+	font-weight: bold;
+	opacity: 0.8;
+}
+
+section#text p {
+	font-size: 0.9em;
+	opacity: 0.5;
+	font-weight: bold;
+	letter-spacing: 0.4px;
+}
+
+section#links {
+	display: flex;
+	justify-content: space-between;
+}
+
+article#perfil {
+	display: flex;
+}
+
+section#links img {
+	border-radius: 200px;
+	width: 50px;
+	height: 50px;
+}
+
+div#description {
+	margin-left: 20px;
+}
+
+div#description h3 {
+	font-size: 0.9em;
+	letter-spacing: 1px;
+	font-weight: bold;
+	opacity: 0.7;
+}
+
+div#description p {
+	font-size: 0.8em;
+	letter-spacing: 0.4px;
+	opacity: 0.6;
+	font-weight: bold;
+}
+
+article#share{
+	padding-top: 5px;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	background: hsl(210, 46%, 95%);
+	border-radius: 200px;
+}
+
+article#share:hover{
+	cursor: pointer;
+}
+
+div#box {
+	width: fit-content;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	border-radius: 10px;
+
+}
+
+div#box a{
+	margin-right: 5px;
+}
+
+div#box a:link, a:visited {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 0.8em;
+	letter-spacing: 2px;
+	color: white;
+}
+
+div#box i {
+	margin-right: 5px;
+	color: white;
+}
+
+footer {
+	margin-top: 20px;
+	text-align: center;
+}

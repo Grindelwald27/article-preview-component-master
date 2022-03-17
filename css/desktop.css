@@ -1,0 +1,51 @@
+@media (min-width: 768px) and (max-width: 2400px){
+	div.container {
+		margin-top: 150px;
+		max-width: 800px;
+		min-width: 800px;
+		height: 252px;
+		display: flex;
+	}
+
+	header img{
+		width: 900px;
+		border-radius: 15px 0px 0px 15px;
+	}
+
+	main {
+		padding: 30px;
+		padding-right: 50px;
+		border-radius: 0px 15px 15px 0px;
+	}
+
+	section#text h1 {
+		font-size: 1.0em;
+	}
+
+	section#text p {
+		padding: 20px 0px;
+		font-size: 0.8em;
+	}
+
+	article#perfil img {
+		width: 40px;
+		height: 40px;
+	}
+
+	div#box {
+		right: 50px;
+		background: hsl(217, 19%, 35%);
+		top: 30px;
+	}
+
+	div#box::after {
+		content: " ";
+		position: absolute;
+	    bottom: 100%; /* At the bottom of the tooltip */
+		left: 50%;
+		margin-left: -5px;
+		border-width: 5px;
+		border-style: solid;
+		border-color: transparent transparent hsl(217, 19%, 35%) transparent;
+	}
+}

@@ -1,0 +1,40 @@
+@media (min-width: 360px) and (max-width: 767px){
+	div.container {
+		width: 90%;
+		margin: 10% auto;
+	}
+
+	header img {
+		border-radius: 15px 15px 0px 0px;
+	}
+
+	main {
+		padding: 30px;
+		border-radius: 0px 0px 15px 15px;
+	}
+
+	section#text h1 {
+		margin: 10px 0px;
+	}
+
+	section#text p{
+		padding: 10px 10px 20px 0px;
+	}
+
+	div#box {
+		right: 50px;
+		background: hsl(217, 19%, 35%);
+		bottom: 90px;
+	}
+
+	div#box::after {
+		content: " ";
+		position: absolute;
+	    top: 100%; /* At the bottom of the tooltip */
+		left: 50%;
+		margin-left: -5px;
+		border-width: 5px;
+		border-style: solid;
+		border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+	}
+}
