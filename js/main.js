@@ -12,15 +12,10 @@ let iTwitter = document.createElement('i');
 
 let iPint = document.createElement('i');
 
-share.onclick = function (){
+divElement.setAttribute('id', 'box');
+divElement.setAttribute('class', 'hid');
 
-	document.getElementById('share').style.background = 'hsl(217, 19%, 35%)';
-
-	// div
-	divElement.setAttribute('id', 'box');
-
-	share.appendChild(divElement);
-
+function show(){
 	//a
 	aElement.appendChild(text);
 
@@ -39,10 +34,23 @@ share.onclick = function (){
 	//adicionando icone do pinterest
 	iPint.setAttribute('class', 'fa-brands fa-pinterest');
 	divElement.appendChild(iPint);
+}
 
-	share.onclick = function(){
+share.onclick = function (){
+
+	if (divElement.className == "hid"){
+
+		share.appendChild(divElement);
+		show();
+
+		divElement.className = "show";
+		document.getElementById('share').style.background = 'hsl(217, 19%, 35%)';
+
+	} else {
+
 		share.removeChild(divElement);
-		document.getElementById('share').style.background = 'hsl(210, 46%, 95%)';
+		divElement.className = "hid";
+		document.getElementById('share').style.background = 'hsl(210, 46%, 95%)'
+		
 	}
-
 }
